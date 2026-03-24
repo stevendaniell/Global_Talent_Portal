@@ -2,9 +2,9 @@
 const msalConfig = {
     auth: {
         // IMPORTANT: Replace these with your actual Azure Entra ID Application configuration!
-        clientId: "YOUR_CLIENT_ID_HERE", 
-        authority: "https://login.microsoftonline.com/YOUR_TENANT_ID_HERE", 
-        redirectUri: window.location.origin, // Ensures it returns to Vercel/localhost correctly
+        clientId: "bc75bdc8-9938-4acb-be06-6aaa8b0bfefd", 
+        authority: "https://login.microsoftonline.com/9698bb3b-ba99-430d-a659-5133ce81831d", 
+        redirectUri: "https://global-talent-portal-azure.vercel.app/", // Ensures it returns to Vercel/localhost correctly
     },
     cache: {
         cacheLocation: "sessionStorage",
