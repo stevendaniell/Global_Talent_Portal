@@ -1,0 +1,18 @@
+# Ignore internal markdown files used for development tracking
+*.md
+!README.md
+
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
