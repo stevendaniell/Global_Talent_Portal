@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Talent | Global Talent Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo" style="text-decoration: none;">
+            <i class="fa-solid fa-globe"></i> GlobalTalent
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="search.html" class="active">Find Talent</a>
+            <a href="upload.html">Upload Resume</a>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn-primary" onclick="login()"><i class="fa-brands fa-microsoft"></i> Sign in with Entra ID</button>
+        </div>
+    </header>
+
+    <main style="padding: 5rem 5%;">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h1 class="hero-title">Search <span>Candidates</span></h1>
+            <p class="hero-subtitle">Find the perfect match for your open roles.</p>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto; display: flex; gap: 1rem;">
+            <input type="text" id="searchInput" placeholder="Search by skills e.g., Java, React, Cloud" style="flex: 1; padding: 1.25rem; background: rgba(13, 17, 23, 0.8); border: 1px solid var(--surface-border); border-radius: 8px; color: white; font-size: 1.1rem; font-family: 'Inter', sans-serif;">
+            <button class="btn-primary btn-large" onclick="performSearch()"><i class="fa-solid fa-search"></i> Search</button>
+        </div>
+
+        <div class="candidate-grid" id="resultsGrid">
+            <!-- Example Candidate Card (Mock data for UI) -->
+            <div class="candidate-card">
+                <h3>Jane Doe</h3>
+                <p style="color: var(--text-muted);"><i class="fa-solid fa-briefcase"></i> Senior Cloud Architect</p>
+                <div class="skills">
+                    <span class="skill-badge">Azure</span>
+                    <span class="skill-badge">Kubernetes</span>
+                    <span class="skill-badge">Java</span>
+                </div>
+                <button class="btn-secondary" style="width: 100%; margin-top: 1.5rem;"><i class="fa-solid fa-file-pdf"></i> View Resume</button>
+            </div>
+            
+            <div class="candidate-card">
+                <h3>John Smith</h3>
+                <p style="color: var(--text-muted);"><i class="fa-solid fa-code"></i> Full Stack Developer</p>
+                <div class="skills">
+                    <span class="skill-badge">React</span>
+                    <span class="skill-badge">Node.js</span>
+                    <span class="skill-badge">TypeScript</span>
+                </div>
+                <button class="btn-secondary" style="width: 100%; margin-top: 1.5rem;"><i class="fa-solid fa-file-pdf"></i> View Resume</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

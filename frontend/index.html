@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Talent Portal | Connect with Top Professionals</title>
+    <meta
+      name="description"
+      content="Discover top candidates or upload your resume to get hired. A modern platform for recruiters and job seekers."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo"><i class="fa-solid fa-globe"></i> GlobalTalent</div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="search.html">Find Talent</a>
+        <a href="upload.html">Upload Resume</a>
+      </nav>
+      <div class="auth-buttons">
+        <button id="loginBtn" class="btn-primary" onclick="login()">
+          <i class="fa-brands fa-microsoft"></i> Sign in with Entra ID
+        </button>
+      </div>
+    </header>
+
+    <main class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Discover the World's <span>Best Talent</span>
+        </h1>
+        <p class="hero-subtitle">
+          The premier cloud-native platform connecting innovative companies with
+          extraordinary professionals. Powered by Azure.
+        </p>
+        <div class="hero-actions">
+          <button
+            class="btn-primary btn-large"
+            onclick="window.location.href = 'search.html'"
+          >
+            I'm a Recruiter
+          </button>
+          <button
+            class="btn-secondary btn-large"
+            onclick="window.location.href = 'upload.html'"
+          >
+            I'm a Candidate
+          </button>
+        </div>
+      </div>
+      <div class="hero-graphics">
+        <div class="glass-card stat-card stat-1">
+          <h3>10k+</h3>
+          <p>Active Candidates</p>
+        </div>
+        <div class="glass-card stat-card stat-2">
+          <h3>98%</h3>
+          <p>Placement Rate</p>
+        </div>
+        <div class="glass-card feature-card">
+          <i class="fa-solid fa-bolt"></i>
+          <div>
+            <h4>Lightning Fast</h4>
+            <p>Powered by Azure Cosmos DB</p>
+          </div>
+        </div>
+        <div class="blob-shape"></div>
+      </div>
+    </main>
+
+    <script src="js/auth.js"></script>
+  </body>
+</html>
